@@ -93,6 +93,7 @@ target/
 
 src/outputs
 src/*.sh
+docker/*.sh
 
 *.bin
 
