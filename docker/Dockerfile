@@ -175,7 +175,9 @@ RUN cd ./apex && \
 # ------------------------------------------------------------------
 RUN git clone -b develop --depth 99 https://github.com/s-ryosky/CIA-SSD.git
 COPY setup.py /opt/CIA-SSD
-RUN cd ./CIA-SSD && \
+RUN cd ./CIA-SSD/det3d/core/iou3d && \
+    python setup.py install && \
+    cd ../../.. && \
     python setup.py build develop
 # ==================================================================
 # nuScenes devkit

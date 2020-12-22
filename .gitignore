@@ -94,6 +94,7 @@ target/
 src/outputs
 src/*.sh
 docker/*.sh
+work_dirs/
 
 *.bin
 

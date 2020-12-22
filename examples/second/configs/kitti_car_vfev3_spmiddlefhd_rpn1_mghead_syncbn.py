@@ -4,7 +4,8 @@ from pathlib import Path
 from det3d.builder import build_box_coder
 from det3d.utils.config_tool import get_downsample_factor
 
-data_root_prefix = "/mnt/proj50/zhengwu"
+# data_root_prefix = "/mnt/proj50/zhengwu"
+data_root_prefix = "/home/shigenaka/workspace/CIA-SSD/data"
 norm_cfg = None
 tasks = [dict(num_class=1, class_names=["Car"],),]
 class_names = list(itertools.chain(*[t["class_names"] for t in tasks]))
