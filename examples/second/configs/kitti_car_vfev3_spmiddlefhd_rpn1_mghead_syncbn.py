@@ -236,6 +236,6 @@ log_level = "INFO"
 work_dir = "/mnt/proj50/zhengwu/saved_model/KITTI/proj52/megvii/second/" + TAG
 load_from = None
 resume_from = None
-workflow = [("train", 60), ("val", 1)]  # todo: only length of workflow has been used
+workflow = [("train", 5), ("val", 1)]  # todo: only length of workflow has been used
 save_file = False if TAG == "debug" or TAG == "exp_debug" or Path(work_dir, "Det3D").is_dir() else True
 
